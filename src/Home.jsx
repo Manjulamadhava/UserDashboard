@@ -14,7 +14,7 @@ function Home() {
 
   const handleDeleteUser = (id) => {
     axios
-      .delete(`https://backend-jsonserver-1-eclv.onrender.com/${id}`)
+      .delete(`https://backend-jsonserver-1-eclv.onrender.com/users/${id}`)
       .then(() => {
         setUsers(users.filter((user) => user.id !== id));
       })
